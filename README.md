@@ -1,4 +1,4 @@
-# C_Makefile
+# C / C++ Makefile
 Universal Makefile C/C++ for Windows and Linux
 
 
