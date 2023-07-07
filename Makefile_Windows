@@ -1,12 +1,11 @@
 # Windows universal Makefile
-#Rename this file "Makefile"
 # .
-# ├── inc/
+# ├── inc\
 # │   └── *.h
-# ├── src/
+# ├── src\
 # │   ├── *.c
 # │   └── *.cpp
-# ├── obj/
+# ├── obj\
 # │   └── *.o
 # ├── main.exe
 # └── Makefile
