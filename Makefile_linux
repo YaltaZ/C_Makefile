@@ -21,7 +21,7 @@ INCLUDE := -I.
 LIBPATH :=
 LIBS :=
 
-FLAGS := -Wall
+FLAGS := -Wall -Wextra -Werror
 CCFLAGS := $(FLAGS) -std=c99
 CXXFLAGS := $(FLAGS)
 
@@ -37,7 +37,25 @@ all: $(OBJECTS)
 %.o: ../src/%.cpp
 	$(CXX) $(CXXFLAGS) $(INCLUDE) -c $< -o $@
 
-.PHONY: clean
+.PHONY: clean program build release debug info
+
+program: all
+
+build: all
+
+release:
+	$(CC) $(CCFLAGS) $(INCLUDE) $(OBJECTS) -o $(TARGET) $(LIBPATH) $(LIBS) -O2
+
+debug:
+	$(CC) $(CCFLAGS) $(INCLUDE) $(OBJECTS) -o $(TARGET) $(LIBPATH) $(LIBS) -g
+
+info:
+	@echo "Target: $(TARGET)"
+	@echo "Sources: $(SOURCES)"
+	@echo "Objects: $(OBJECTS)"
+	@echo "Include: $(INCLUDE)"
+	@echo "Library Paths: $(LIBPATH)"
+	@echo "Libraries: $(LIBS)"
 
 clean:
 	rm -rf obj/*
