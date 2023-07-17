@@ -1,7 +1,7 @@
 # C / C++ Makefile
 Universal Makefile C/C++ for Windows and Linux
 
-# Directories strucutre
+# Dir strucutre
  .
  
  ├── inc/
@@ -23,6 +23,8 @@ Universal Makefile C/C++ for Windows and Linux
  └── Makefile
 
 
-Run : make clean all
+# Run 
+make clean all
 
-Original : https://gist.github.com/freelsn/fe5f160cf564e209dc9c5673296ee813#file-makefile
+# Original Makefile
+https://gist.github.com/freelsn/fe5f160cf564e209dc9c5673296ee813#file-makefile
