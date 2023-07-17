@@ -2,25 +2,18 @@
 Universal Makefile C/C++ for Windows and Linux
 
 # Dir strucutre
- .
- 
- ├── inc/
- 
- │   └── *.h
- 
- ├── src/
- 
- │   ├── *.c
- 
- │   └── *.cpp
- 
- ├── obj/
- 
- │   └── *.o
- 
- ├── main (compiled file, main.exe on windows)
- 
- └── Makefile
+'''bash
+.
+├── inc/
+│   └── *.h
+├── src/
+│   ├── *.c
+│   └── *.cpp
+├── obj/
+│   └── *.o
+├── main (compiled file, main.exe on windows)
+└── Makefile
+'''
 
 
 # Run 
