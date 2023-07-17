@@ -2,7 +2,7 @@
 Universal Makefile C/C++ for Windows and Linux
 
 # Dir strucutre
-'''bash
+```bash
 .
 ├── inc/
 │   └── *.h
@@ -13,7 +13,7 @@ Universal Makefile C/C++ for Windows and Linux
 │   └── *.o
 ├── main (compiled file, main.exe on windows)
 └── Makefile
-'''
+```
 
 
 # Run 
