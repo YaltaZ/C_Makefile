@@ -20,7 +20,7 @@ INCLUDE := -I.
 LIBPATH :=
 LIBS :=
 
-FLAGS := -Wall
+FLAGS := -Wall -Wextra -Werror
 CCFLAGS := $(FLAGS) -std=c99
 CXXFLAGS := $(FLAGS)
 
@@ -36,7 +36,11 @@ obj/%.o: src/%.c
 obj/%.o: src/%.cpp
 	$(CXX) $(CXXFLAGS) $(INCLUDE) -c $< -o $@
 
-.PHONY: clean
+.PHONY: clean info
+info:
+	@echo "Target: $(TARGET)"
+	@echo "Sources: $(SOURCES)"
+	@echo "Objects: $(OBJECTS)"
 
 clean:
 	del /Q obj\*
