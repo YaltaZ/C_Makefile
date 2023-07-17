@@ -15,8 +15,14 @@ Universal Makefile C/C++ for Windows and Linux
 └── Makefile
 ```
 
+# Commands
+make all
 
-# Run 
+make clean
+
+make info
+
+# Easy Run 
 make clean all
 
 # Original Makefile
