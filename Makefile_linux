@@ -1,5 +1,5 @@
 # Linux universal Makefile
-#Rename this file to "Makefile"
+# Rename this file to "Makefile"
 # .
 # ├── inc/
 # │   └── *.h
@@ -11,7 +11,7 @@
 # ├── main
 # └── Makefile
 #
-# Run : make clean all
+# Run: make clean all
 
 TARGET := main
 SOURCES := $(wildcard src/*.c src/*.cpp)
@@ -37,11 +37,8 @@ all: $(OBJECTS)
 %.o: ../src/%.cpp
 	$(CXX) $(CXXFLAGS) $(INCLUDE) -c $< -o $@
 
-.PHONY: clean help
+.PHONY: clean
 
 clean:
 	rm -rf obj/*
 	rm -f $(TARGET)
-	
-help:
-	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
