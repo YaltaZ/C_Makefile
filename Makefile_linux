@@ -37,17 +37,8 @@ all: $(OBJECTS)
 %.o: ../src/%.cpp
 	$(CXX) $(CXXFLAGS) $(INCLUDE) -c $< -o $@
 
-.PHONY: clean program build release debug info
 
-program: all
-
-build: all
-
-release:
-	$(CC) $(CCFLAGS) $(INCLUDE) $(OBJECTS) -o $(TARGET) $(LIBPATH) $(LIBS) -O2
-
-debug:
-	$(CC) $(CCFLAGS) $(INCLUDE) $(OBJECTS) -o $(TARGET) $(LIBPATH) $(LIBS) -g
+.PHONY: clean info
 
 info:
 	@echo "Target: $(TARGET)"
