@@ -3,15 +3,25 @@ Universal Makefile C/C++ for Windows and Linux
 
 # Directories strucutre
  .
+ 
  ├── inc/
+ 
  │   └── *.h
+ 
  ├── src/
+ 
  │   ├── *.c
+ 
  │   └── *.cpp
+ 
  ├── obj/
+ 
  │   └── *.o
+ 
  ├── main (compiled file, main.exe on windows)
+ 
  └── Makefile
+
 
 Run : make clean all
 
