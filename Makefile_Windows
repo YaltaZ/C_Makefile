@@ -37,10 +37,14 @@ obj/%.o: src/%.cpp
 	$(CXX) $(CXXFLAGS) $(INCLUDE) -c $< -o $@
 
 .PHONY: clean info
+
 info:
 	@echo "Target: $(TARGET)"
 	@echo "Sources: $(SOURCES)"
 	@echo "Objects: $(OBJECTS)"
+	@echo "Include: $(INCLUDE)"
+	@echo "Library Paths: $(LIBPATH)"
+	@echo "Libraries: $(LIBS)"
 
 clean:
 	del /Q obj\*
