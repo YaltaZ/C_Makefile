@@ -21,7 +21,7 @@ INCLUDE := -I.
 LIBPATH :=
 LIBS :=
 
-FLAGS := -Wall -Wextra -Werror
+FLAGS := -Wall -Wextra -g
 CCFLAGS := $(FLAGS) -std=c99
 CXXFLAGS := $(FLAGS)
 
