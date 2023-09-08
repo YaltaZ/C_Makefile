@@ -47,5 +47,4 @@ info:
 	@echo "Libraries: $(LIBS)"
 
 clean:
-	del /Q obj\*
 	del /Q $(TARGET)
