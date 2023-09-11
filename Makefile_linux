@@ -49,4 +49,5 @@ info:
 	@echo "Libraries: $(LIBS)"
 
 clean:
-	rm -f $(TARGET)
+		rm -f $(TARGET)
+# rm -rf obj/*
